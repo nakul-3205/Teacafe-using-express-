@@ -26,7 +26,7 @@ app.post('/tea',(req,res)=>{
 app.get('/',(req,res)=>{
     res.status(202)
     res.send(teadata)
-    res.end("here are all the tea")
+    
 })
 app.get('/tea/:id',(req,res)=>{
     let tid=teadata.find(t=> t.id===parseInt(req.params.id))
