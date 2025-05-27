@@ -1,7 +1,7 @@
  import express from 'express'
 
  const app = express()
- const port =3020
+ const port = process.env.PORT || 3020
  app.use(express.json())
 
 
